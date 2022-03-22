@@ -17,6 +17,7 @@ const Product = ({ haldleCartAdd, product }) => {
         <p>Price:${price}</p>
         <p>Manufacturer:{seller}</p>
         <p>Rating:{ratings}</p>
+        
       </div>
       <button onClick={() => haldleCartAdd(product)} className="btn-cart">
         <p className="btn-text">Add To Card</p>

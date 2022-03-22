@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faDeleteLeft} from "@fortawesome/free-solid-svg-icons";
+import { addToDb, getStoredCard } from "../../utilities/fakedb";
+import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import "./Shop.css";
 const Shop = () => {
@@ -11,9 +11,34 @@ const Shop = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-  const haldleCartAdd = (product) => {
-    const newCard = [...cart, product];
+
+  useEffect(() => {
+    const storedCard = getStoredCard();
+    const saveCard = [];
+    for (const id in storedCard) {
+      const addedProduct = products.find((product) => product.id === id);
+      if (addedProduct) {
+        const quantity = storedCard[id];
+        addedProduct.quantity = quantity;
+        saveCard.push(addedProduct);
+      }
+    }
+    setCart(saveCard);
+  }, [products]);
+  const haldleCartAdd = (selectedProduct) => {
+    let newCard = [];
+    const exites = cart.find((product) => product.id === selectedProduct.id);
+    if (!exites) {
+      selectedProduct.quantity = 1;
+      newCard = [...cart, selectedProduct];
+    } else {
+      const rest = cart.filter((product) => product.id !== selectedProduct.id);
+      exites.quantity = exites.quantity + 1;
+      newCard = [...rest, exites];
+    }
+
     setCart(newCard);
+    addToDb(selectedProduct.id);
   };
   return (
     <div className="shop-container">
@@ -27,17 +52,7 @@ const Shop = () => {
         ))}
       </div>
       <div className="order-container">
-        <h4>Oder Summary</h4>
-        <p>Select Item:{cart.length}</p>
-        <p>Total Price: $</p>
-        <p>Total Shipping Charge: $</p>
-        <p>Tax: $</p>
-        <p className="order-grand">Grand Total: $</p>
-        <div className="btn-order">
-          <button className="btn-delete">Clear Cart
-          <FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button> <br /> <br />
-          <button className="btn-review">Review Order</button>
-        </div>
+        <Cart cart={cart}></Cart>
       </div>
     </div>
   );
