@@ -1,12 +1,20 @@
 import "./App.css";
-import Header from "./components/Header/Header";
-import Shop from "./components/Shop/Shop";
+import Header from "./conponent/Header/Header";
+import Shop from "./conponent/Shop/Shop";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
-  return <div>
-    <Header></Header>
-    <Shop></Shop>
-  </div>;
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  return (
+    <div className="App">
+      <Header></Header>
+      <Shop></Shop>
+    </div>
+  );
 }
 
 export default App;

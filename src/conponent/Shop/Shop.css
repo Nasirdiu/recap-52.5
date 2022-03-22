@@ -1,0 +1,52 @@
+.shop-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  background-color: rgb(202, 207, 206);
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+  margin: 50px 20px;
+}
+.order-container {
+  background-color: #ffe0b3;
+  text-align: center;
+}
+.order-grand {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.btn-delete {
+  background: #ff3030;
+  width: 232px;
+  height: 48px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.btn-review {
+  background: #ff9900;
+  width: 232px;
+  height: 48px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  cursor: pointer;
+}

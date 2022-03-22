@@ -1,15 +1,16 @@
 import React from "react";
-import "./Header.css";
 import logo from "../../images/Logo.svg";
+import "./Header.css";
+
 const Header = () => {
   return (
-    <nav className="header-nav">
+    <nav className="nov-product">
       <img src={logo} alt="" />
       <div>
-        <a href="">Shop</a>
-        <a href="">Order</a>
-        <a href="">Inventory</a>
-        <a href="">About</a>
+          <a href="">Shop</a>
+          <a href="">Order</a>
+          <a href="">Invoice</a>
+          <a href="">About</a>
       </div>
     </nav>
   );

@@ -1,19 +1,21 @@
-.header-nav {
-  height: 80px;
+.nov-product {
   background-color: #1c2b35;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
   padding-left: 140px;
   padding-right: 140px;
 }
 
-.header-nav a {
+.nov-product a {
   color: white;
   text-decoration: none;
-  font-size: 17px;
   margin-left: 36px;
+  font-size: 17px;
+
 }
-.header-nav a:hover{
+.nov-product a:hover{
     color: orange;
 }
+
