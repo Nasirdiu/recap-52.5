@@ -6,8 +6,9 @@ const Dog = (props) => {
   return (
     <div className="dog-container">
       <img src={img} alt="" />
-      <p>Name:{name}</p>
+      <p className="name">Name:{name}</p>
       <p>Price:${price}</p>
+      <button className="btn-container"><p>Add TO Card</p></button>
     </div>
   );
 };
