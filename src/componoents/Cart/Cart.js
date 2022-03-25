@@ -13,7 +13,7 @@ const Cart = ({ cart }) => {
     <div className="cart">
       <h4>Order Prosing</h4>
       <p>Select Item:{cart.length}</p>
-      <p>Blance: ${balance.toFixed(2)}</p>
+      <p>Balance: ${balance.toFixed(2)}</p>
       <p>Cost:${cost}</p>
       <p>Tax${tax}</p>
       <p>Grand Total:${grandTotal}</p>
