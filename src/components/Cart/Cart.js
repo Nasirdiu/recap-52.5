@@ -6,7 +6,7 @@ const Cart = (props) => {
   let name = "";
   let img = "";
   for (const dog of cart) {
-    name = dog.name;
+    name =dog.name;
     img = dog.img;
   }
   return (
