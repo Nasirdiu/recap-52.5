@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Dog Ecommerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dog Ecommerce Website [Live Link](https://dog-sell.netlify.app/).
 
 ## Available Scripts
 
