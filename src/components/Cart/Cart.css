@@ -1,0 +1,12 @@
+.cart{
+    position: sticky;
+    top: 0;
+}
+.btn-cart{
+    
+    border-radius: 8px 0px 0px 8px;
+}
+.cart-img img{
+    width: 90px;
+    border-radius: 8px;
+}
