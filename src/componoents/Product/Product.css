@@ -1,0 +1,14 @@
+.product {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  text-align: center;
+}
+.product-map{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+  padding-left: 40px;
+}
+.order-container{
+  background-color: cadetblue;
+}

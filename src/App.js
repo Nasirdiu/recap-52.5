@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "./conponent/Header/Header";
-import Shop from "./conponent/Shop/Shop";
+import Header from "./componoents/Header/Header";
+import Product from "./componoents/Product/Product";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -11,8 +11,8 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Header></Header>
-      <Shop></Shop>
+      <Header />
+      <Product />
     </div>
   );
 }

@@ -1,0 +1,35 @@
+.service {
+    height: 450px;
+  border: 2px solid rgb(37, 122, 111);
+  border-radius: 50px 0px 50px 0px;
+  margin: 10px;
+  padding: 10px;
+  background-color: gray;
+  position: relative;
+}
+.service img {
+  width: 250px;
+  border-radius: 0px 25px 0px 25px;
+}
+.name {
+  font-size: 25px;
+  font-family: "Lato";
+}
+.btn-product {
+  width: 100%;
+  background: #ffe0b3;
+  border: none;
+  border-radius: 0px 0px 8px 8px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-product:hover{
+ background-color: orange;
+}
+.text{
+  margin-right: 5px;
+}
