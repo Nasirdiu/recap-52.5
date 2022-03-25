@@ -12,7 +12,11 @@ const Product = () => {
   }, []);
   const handeler = (product) => {
     const newCart = [...cart, product];
-    setCart(newCart);
+    if ((newCart.length) === 5) {
+      alert("No Add Product");
+    } else {
+      setCart(newCart);
+    }
   };
   return (
     <div className="product">
@@ -22,7 +26,16 @@ const Product = () => {
         ))}
       </div>
       <div className="order-container">
-        <Cart cart={cart}></Cart>
+        <div>
+          <h3>Order Dog</h3>
+        </div>
+        {cart.map((item) => (
+          <Cart key={item.id} item={item}></Cart>
+        ))}
+        <div className="mt-3">
+          <button className="btn-cart">Choose For 1 Me</button>
+          <button className="btn-cart">Rest</button>
+        </div>
       </div>
     </div>
   );
