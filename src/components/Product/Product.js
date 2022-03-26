@@ -12,7 +12,7 @@ const Product = () => {
   }, []);
   const handeler = (product) => {
     const newCart = [...cart, product];
-    if ((newCart.length) === 5) {
+    if (newCart.length === 5) {
       alert("No Add Product");
     } else {
       setCart(newCart);

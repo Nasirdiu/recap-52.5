@@ -1,15 +1,8 @@
-.cart{
-    position: sticky;
-    top: 0;
+.cart-img img {
+  width: 80px;
+  border-radius: 50px;
 }
-.btn-cart{
-    
-    border-radius: 8px 0px 0px 8px;
+.cart-img {
+  margin: 10px;
 }
-.cart-img img{
-    width: 80px;
-    border-radius: 50px;
-}
-.cart-img{
-    margin: 10px;
-}
+
