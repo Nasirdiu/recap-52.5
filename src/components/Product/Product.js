@@ -11,11 +11,13 @@ const Product = () => {
       .then((data) => setProducts(data));
   }, []);
   const handeler = (product) => {
-    const newCart = [...cart, product];
-    if (newCart.length === 5) {
-      alert("No Add Product");
-    } else {
-      setCart(newCart);
+    if (cart.indexOf(product) === -1) {
+      const newCart = [...cart, product];
+      if (newCart.length > 4) {
+        alert("No Add Product");
+      } else {
+        setCart(newCart);
+      }
     }
   };
   const remove = () => {
