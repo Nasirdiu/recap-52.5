@@ -3,11 +3,11 @@ import "./Cart.css";
 const Cart = (props) => {
   const { item } = props;
   return (
-    <div>
+    <div className="cart">
       <div className="cart-img d-flex justify-content-center  align-items-center ">
         <img src={item.img} alt="" />
-        <h5>Name:{item.name} <br />
-        </h5>
+        <h6>{item.name} <br />
+        </h6>
       </div>
       
     </div>

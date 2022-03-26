@@ -17,9 +17,6 @@ const Product = () => {
     } else {
       setCart(newCart);
     }
-    if ((product = product)) {
-      product = [];
-    }
   };
   const remove = () => {
     const removeAll = [];

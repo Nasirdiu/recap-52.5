@@ -12,11 +12,12 @@
     "name": "BRUCE "
   },
   {
-    "id": "3",
-    "price": 410.5822,
-    "img": "https://blog-cdn.dogbuddy.com/wp-content/uploads/2017/01/dog-947739_1920.jpg",
-    "name": "ARLO "
+    "id": "12",
+    "price": 438.3956,
+    "img": "https://i.pinimg.com/originals/88/d2/e7/88d2e7b3874097a8a7858ec73ff24876.jpg",
+    "name": "LUCKY "
   },
+  
   {
     "id": "4",
     "price": 465.0741,
@@ -66,9 +67,10 @@
     "name": "RUGER "
   },
   {
-    "id": "12",
-    "price": 438.3956,
-    "img": "https://i.pinimg.com/originals/88/d2/e7/88d2e7b3874097a8a7858ec73ff24876.jpg",
-    "name": "LUCKY "
+    "id": "3",
+    "price": 410.5822,
+    "img": "https://blog-cdn.dogbuddy.com/wp-content/uploads/2017/01/dog-947739_1920.jpg",
+    "name": "ARLO "
   }
+  
 ]
