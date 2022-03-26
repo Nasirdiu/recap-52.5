@@ -17,7 +17,15 @@ const Product = () => {
     } else {
       setCart(newCart);
     }
+    if ((product = product)) {
+      product = [];
+    }
   };
+  const remove = () => {
+    const removeAll = [];
+    setCart(removeAll);
+  };
+
   return (
     <div className="product">
       <div className="product-container">
@@ -34,7 +42,9 @@ const Product = () => {
         ))}
         <div className="mt-3">
           <button className="btn-cart">Choose For 1 Me</button>
-          <button className="btn-cart">Rest</button>
+          <button onClick={remove} className="btn-cart">
+            Rest
+          </button>
         </div>
       </div>
     </div>
