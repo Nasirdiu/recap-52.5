@@ -1,0 +1,9 @@
+.meal{
+   border: 1px solid gainsboro;
+    border-radius: 20px;
+    padding: 10px;
+}
+.meal img{
+    width: 200px;
+    border-radius: 20px;
+}
